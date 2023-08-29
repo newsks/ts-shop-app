@@ -1,7 +1,3 @@
-a {
-    text-decoration: none;
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -22,8 +18,7 @@ a {
 .header_logo {
     display: flex;
     flex-direction: row;
-    color: black;
-    
+
     span {
         font-size: 20px;
     }
