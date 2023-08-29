@@ -40,10 +40,10 @@ const DetailPage = () => {
             <p>{product.description}</p>
             <div>
               <button
-                disabled={!productMatching}
-                onClick={() => productMatching && addItemToCart()}
+                disabled={productMatching}
+                onClick={() => !productMatching && addItemToCart()}
               >
-                {productMatching ? "장바구니에 담기" : "장바구니에 담긴 제품"}
+                {productMatching ? "장바구니에 담긴 제품" : "장바구니에 담기"}
               </button>
               <Link to="/cart">장바구니로 이동</Link>
             </div>
